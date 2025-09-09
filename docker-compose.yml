@@ -8,7 +8,6 @@ services:
       - GIN_MODE=release
     volumes:
       - ./conf:/conf
-      - ./logs:/logs
     networks:
       - dokploy-network
 
