@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       REPO_URL: "https://github.com/bankei-dev"
-      RUNNER_TOKEN: ${RUNNER_TOKEN}
+      RUNNER_TOKEN: "AEBZXS2MCPXL5ZFD0XWPOCTIZAMY"
       RUNNER_NAME: "self-hosted-runner"
       RUNNER_WORKDIR: "/_work"
       LABELS: "self-hosted,linux,x64"
