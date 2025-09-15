@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  github-runner:
+    image: myoung34/github-runner:latest
+    restart: unless-stopped
+    environment:
+      REPO_URL: "https://github.com/bankei-dev"
+      RUNNER_TOKEN: "${{environment.RUNNER_TOKEN}}"
+      RUNNER_NAME: "self-hosted-runner"
+      RUNNER_WORKDIR: "/_work"
+      LABELS: "self-hosted,linux,x64"
+      RUNNER_GROUP: "Default"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
