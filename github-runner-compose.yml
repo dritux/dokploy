@@ -5,8 +5,8 @@ services:
     image: myoung34/github-runner:latest
     restart: unless-stopped
     environment:
-      REPO_URL: "https://github.com/bankei-dev"
-      RUNNER_TOKEN: "AEBZXS2MCPXL5ZFD0XWPOCTIZAMY"
+      REPO_URL: "https://github.com/dritec-djmatch"
+      RUNNER_TOKEN: "AEBZXS2X5LM2R3POLYUEYGDIZBWNG"
       RUNNER_NAME: "self-hosted-runner"
       RUNNER_WORKDIR: "/_work"
       LABELS: "self-hosted,linux,x64"
